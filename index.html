@@ -3,23 +3,34 @@
 <head>
     <title>Tata Letak Web Sederhana</title>
     <style>
-    header {
-        background-color: #ffcc99; /* Warna oranye muda */
-        padding: 10px;
-        text-align: center;
-    }
+        /* Reset CSS dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    nav {
-        background-color: #b3d9ff; /* Warna biru muda */
-        padding: 10px;
-        text-align: center;
-    }
+        /* Gaya untuk header */
+        header {
+            background-color: #ffcc99; /* Warna oranye muda */
+            padding: 10px;
+            text-align: center;
+        }
 
-    .main-content {
+        /* Gaya untuk bilah navigasi */
+        nav {
+            background-color: #b3d9ff; /* Warna biru muda */
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Area konten utama */
+        .main-content {
             display: flex;
             padding: 20px;
         }
 
+        /* Gaya untuk bagian konten */
         .content {
             flex: 3;
             background-color: #f2cccc; /* Warna pink muda */
@@ -27,18 +38,21 @@
             margin-right: 10px;
         }
 
+        /* Gaya untuk sidebar menu */
         .sidebar {
             flex: 1;
             background-color: #d9ead3; /* Warna hijau muda */
             padding: 20px;
         }
 
+        /* Gaya untuk footer */
         footer {
             background-color: #ffcc99; /* Warna oranye muda */
             padding: 10px;
             text-align: center;
         }
 
+        /* Gaya untuk daftar menu */
         ul {
             list-style-type: none;
             padding: 0;
@@ -48,11 +62,43 @@
             margin-bottom: 10px;
         }
     </style>
-
-<title>Page Title</title>
 </head>
 <body>
 
+    <!-- Bagian header -->
+    <header>
+        <h1>HEADER</h1>
+    </header>
+
+    <!-- Bilah navigasi -->
+    <nav>
+        <p>NAVIGASI</p>
+    </nav>
+
+    <!-- Area konten utama yang terdiri dari konten dan sidebar -->
+    <div class="main-content">
+        <!-- Bagian konten utama -->
+        <div class="content">
+            <h1>Heading 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Bagian sidebar dengan menu -->
+        <div class="sidebar">
+            <h3>Menu:</h3>
+            <ul>
+                <li>Home</li>
+                <li>Berita</li>
+                <li>Layanan</li>
+                <li>Kontak</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bagian footer -->
+    <footer>
+        <p>FOOTER</p>
+    </footer>
 
 </body>
 </html>
